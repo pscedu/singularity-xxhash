@@ -48,5 +48,5 @@ Tools included in this module are
 
 local package = "xxhash"
 local version = "0.8.0"
-local base    = pathJoin("/jet/home/icaoberg/singularity",package,version)
+local base    = pathJoin("/opt/packages",package,version)
 prepend_path("PATH", base)

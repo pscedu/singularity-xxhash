@@ -25,6 +25,6 @@ module-whatis "xxhash 0.8.0 (xxhash)
   * xxh64sum
   * xxhsum
 
-set STAR_FUSION_HOME /opt/packages/xxhash/0.8.0
-setenv STAR_FUSION_HOME ${STAR_FUSION_HOME}
-prepend-path PATH ${STAR_FUSION_HOME}
+set XXHASH_HOME /opt/packages/xxhash/0.8.0
+setenv XXHASH_HOME ${XXHASH_HOME}
+prepend-path PATH ${XXHASH_HOME}
