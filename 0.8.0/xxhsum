@@ -4,7 +4,7 @@ if [ ! $(command -v singularity) ]; then
 	module load singularity
 fi
 
-VERSION=3.2.18
+VERSION=0.8.0
 PACKAGE=xxhash
 TOOL=xxhsum
 DIRECTORY=$(dirname $0)
