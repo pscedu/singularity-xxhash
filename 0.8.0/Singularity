@@ -1,0 +1,14 @@
+Bootstrap: docker
+From: alpine:edge
+
+%labels
+    AUTHOR icaoberg
+    EMAIL icaoberg@psc.edu
+    WEBSITE http://gitlab.psc.edu/icaoberg/singularity-xxhash
+    VERSION 0.8.0
+
+%post
+    apk update
+    apk add libxxhash xxhash
+
+####################################################################################
