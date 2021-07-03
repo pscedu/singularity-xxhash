@@ -1,9 +1,5 @@
 #!/bin/bash
 
-if [ ! $(command -v singularity) ]; then
-	module load singularity
-fi
-
 VERSION=0.8.0
 PACKAGE=xxhash
 TOOL=xxhsum
