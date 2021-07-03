@@ -11,7 +11,7 @@ Singularity recipe for [xxhash](https://github.com/sandialabs/mc).
 Copy the
 
 * `SIF` file
-* and the scripts
+* and the `xxh128sum`, `xxh32sum`, `xxh64sum` and `xxhsum` scripts
 
 to `/opt/packages/xxhash/4.8.25`.
 
