@@ -1,26 +1,38 @@
-# README
+![Status](https://github.com/pscedu/singularity-xxhash/actions/workflows/main.yml/badge.svg)
+![Issue](https://img.shields.io/github/issues/pscedu/singularity-xxhash)
+![forks](https://img.shields.io/github/forks/pscedu/singularity-xxhash)
+![Stars](https://img.shields.io/github/stars/pscedu/singularity-xxhash)
+![License](https://img.shields.io/github/license/pscedu/singularity-xxhash)
 
-## About
-Source code repository can be found [here](https://github.com/Cyan4973/xxHash).
+# singularity-xxhash
+Singularity recipe for [xxhash](https://github.com/sandialabs/mc).
 
-## Building the container for Bridges (or similar)
-Run
+## Installing the container on Bridges 2
+Copy the
+
+* `SIF` file
+* and the scripts
+
+to `/opt/packages/xxhash/4.8.25`.
+
+Copy the file `modulefile.lua` to `/opt/modulefiles/xxhash` as `4.8.25.lua`.
+
+## Building the image using the recipe
+### To build the image locally
+Run the script `build.sh` to build image locally.
+
+```
+bash ./build.sh
+```
+
+### To build the image remotely
+Run the script `rbuild.sh` to build image remotely.
 
 ```
 bash ./rbuild.sh
 ```
 
-## Installing the container on Bridges (or similar)
-Copy the
-
-* `SIF` file
-* and the `xxh*` scripts
-
-to `/opt/packages/xxhash/0.8.0`.
-
-Copy the file `modulefile` to `/opt/modules/xxhash` as `0.8.0`.
-
-## Test
+## To run tests
 To run the available tests, run the command
 
 ```
@@ -28,6 +40,7 @@ bash ./test.sh
 ```
 
 ---
-[![PSC](http://www.andrew.cmu.edu/user/icaoberg/images/logos/psc.png)](http://www.psc.edu)
+Copyright © 2020-2021 Pittsburgh Supercomputing Center. All Rights Reserved.
 
-[icaoberg](http://www.andrew.cmu.edu/~icaoberg) at the [Pittsburgh Supercomputing Center](http://www.psc.edu) in the [Mellon College of Science](https://www.cmu.edu/mcs/) at [Carnegie Mellon University](http://www.cmu.edu).
+The [Biomedical Applications Group](https://www.psc.edu/biomedical-applications/) at the [Pittsburgh Supercomputing
+Center](http://www.psc.edu) in the [Mellon College of Science](https://www.cmu.edu/mcs/) at [Carnegie Mellon University](http://www.cmu.edu).
