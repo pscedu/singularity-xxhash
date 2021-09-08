@@ -1,6 +1,6 @@
 #!/bin/bash
 
-module load xxhash
+tree .
 
 wget --quiet --output-document=image.jpg https://pixabay.com/get/53e9d6404b51b108feda8460da29317f1536dde2575972_1920.jpg
 xxhsum image.jpg
