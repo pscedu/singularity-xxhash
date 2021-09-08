@@ -1,20 +1,16 @@
 #!/bin/bash
 
-# Copyright © 2021 Pittsburgh Supercomputing Center.
-# All Rights Reserved.
-
-VERSION=0.8.0
+VERSION=3.2.18
 PACKAGE=xxhash
 TOOL=xxhsum
 DIRECTORY=$(dirname $0)
 
-PERSISTENT_FILE_STORAGE=/ocean
-if [ -d $PERSISTENT_FILE_STORAGE ]; then
-	OPTIONS="-B $PERSISTENT_FILE_STORAGE"
-fi
-
-if [ -d /local ]; then
-	OPTIONS=$OPTIONS" -B /local"
-fi
+OPTIONS=""
+for STORAGE in "${STORAGES[@]}"
+do
+	if [ -d "$STORAGE" ]; then
+		OPTIONS=$OPTIONS" -B $STORAGE"
+	fi
+done
 
 singularity exec $OPTIONS $DIRECTORY/singularity-$PACKAGE-$VERSION.sif $TOOL "$@"
