@@ -23,7 +23,7 @@ module-whatis "xxhash 0.8.0 (xxhash)
   * xxh128sum
   * xxh32sum
   * xxh64sum
-  * xxhsum
+  * xxhsum"
 
 set XXHASH_HOME /opt/packages/xxhash/0.8.0
 setenv XXHASH_HOME ${XXHASH_HOME}
