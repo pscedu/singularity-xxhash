@@ -12,9 +12,7 @@ whatis("URL: https://www.psc.edu/resources/software")
 whatis("Description: Print or verify checksums using fast non-cryptographic algorithm xxHash.")
 
 help([[
-Description
------------
-An emoji guide for your commit messages.
+Print or verify checksums using fast non-cryptographic algorithm xxHash
 
 To load the module type
 
