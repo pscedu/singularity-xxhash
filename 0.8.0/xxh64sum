@@ -5,6 +5,8 @@ PACKAGE=xxhash
 TOOL=xxh64sum
 DIRECTORY=$(dirname $0)
 
+STORAGES=(/ocean /bil /hive /local)
+
 OPTIONS=""
 for STORAGE in "${STORAGES[@]}"
 do
